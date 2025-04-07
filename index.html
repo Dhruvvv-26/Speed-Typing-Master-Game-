@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speed Typing Master</title>
+  <link rel="stylesheet" href="style.css"/>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Speed Typing Master</h1>
+        <p>Improve your typing skills with our interactive challenges</p>
+      </header>
+  
+      <div class="stats-container">
+        <div class="stat">
+          <div>WPM</div>
+          <div class="stat-value" id="wpm">0</div>
+        </div>
+        <div class="stat">
+          <div>CPM</div>
+          <div class="stat-value" id="cpm">0</div>
+        </div>
+        <div class="stat">
+          <div>Accuracy</div>
+          <div class="stat-value" id="accuracy">0%</div>
+        </div>
+      </div>
+  
+      <div class="timer" id="timer">60</div>
+      <div class="progress-bar">
+        <div class="progress" id="progress-bar"></div>
+      </div>
+  
+      <div class="difficulty-selector">
+        <button class="difficulty-btn active" data-difficulty="easy">Easy</button>
+        <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+        <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+      </div>
+  
+      <div class="text-display" id="text-display"></div>
+      
+      <textarea id="typing-area" class="typing-area" placeholder="Start typing when you're ready..." disabled></textarea>
+      
+      <div class="buttons">
+        <button id="start-btn" class="btn btn-primary">Start</button>
+        <button id="reset-btn" class="btn btn-secondary" disabled>Reset</button>
+      </div>
+    </div>
+  
+    <div class="result-modal" id="result-modal">
+      <div class="modal-content">
+        <h2 class="result-title">Test Results</h2>
+        <div class="result-stats">
+          <div class="result-stat">
+            <div>Words Per Minute</div>
+            <div class="result-stat-value" id="result-wpm">0</div>
+          </div>
+          <div class="result-stat">
+            <div>Characters Per Minute</div>
+            <div class="result-stat-value" id="result-cpm">0</div>
+          </div>
+          <div class="result-stat">
+            <div>Accuracy</div>
+            <div class="result-stat-value" id="result-accuracy">0%</div>
+          </div>
+          <div class="result-stat">
+            <div>Time</div>
+            <div class="result-stat-value" id="result-time">0s</div>
+          </div>
+        </div>
+        <button id="close-modal-btn" class="btn btn-primary">Try Again</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
