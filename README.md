@@ -1,6 +1,6 @@
 # 🚀 Speed Typing Master - Interactive Typing Challenge
 
-![Speed Typing Master Preview](https://x.com/Dhruvvv_2608/status/1909597975606686177) 
+👉 Live Demo : https://x.com/Dhruvvv_2608/status/1909597975606686177
 
 ## ✨ Features
 
